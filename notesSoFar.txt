@@ -1,0 +1,44 @@
+emphasis <em> tag
+<strong> tags
+heading should be in sequence
+how to think about code readability in html codes
+what is a metadata
+what are metatags and how are they useful in search engine optimisations.
+anchor tags
+mailto:
+using html tables for layout
+table, th tf, tb
+form
+label
+input
+CSS default browser
+css default settings: No website is completely unstyled.
+everything is basically a box in css, hr is all its border's pixel.
+DEVDOCS
+priority sequence: inline > internal > external
+priority sequence: id > class > tag
+you can only have a unique id in 1 css style sheet, but multiple similar classes
+the difference between class and id is the same as name and passport.
+most of the tags come with default css styles so when we give our own, it basically just strikes through it to apply our style.
+.class, #id
+1 element can have only 1 id but multiple class like class=" broccoli circular'
+pseudo class like link: visited types used to respond to different states.
+s
+centering in css:
+**do not depend on padding or margins for bringing the center rather just use width 50 percent and then we can adjust the left padding.
+Follow by bringing the div to the center and then work.**
+specificity: multiple classes and choose as you want
+multiple selectors: give a comma to choose multiple selectors or you can also choose a descendant
+CHIILD SELECTOR > only 1 gen deep
+chainselector
+
+all the div elements are free to move and locate themselves wherever they want, it is just the ability of moving all the elements all at one time by moving div that makes it powerful, all the elements are independent but if we ever want to apply any change to all of them together we think of the div element.
+
+DISPLAY:
+The inline display puts it in the same line, The height and width of the block cannot be changed unlike display block, it fits the width and height of the typed text.
+**span element**: this is the inline version of div element basically used for grouping stuffs together.
+inline-block: This puts element in the line like inline but also allows for height and width manipulation.
+
+with block if the width becomes very large it gets in right scroll
+in inline block, larger width makes the block go at the next line.
+
