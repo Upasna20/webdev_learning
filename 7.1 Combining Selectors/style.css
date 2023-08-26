@@ -1,0 +1,20 @@
+/* Write your code here: */
+h1, h2{   /*multiple selectors using comma*/
+    color: blueviolet;
+}
+
+div > p{  /*direct ancestor*/
+    color: firebrick;
+}
+
+.box li{ /*descendant selector*/
+    color: blue;
+}
+
+li.done{  /*chain selector*/
+    color: seagreen;
+}
+
+ul p{
+    font-size: 0.5rem;
+}

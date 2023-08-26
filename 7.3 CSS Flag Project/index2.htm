@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size: 80px;
+            text-align: center;
+            margin: 0px;
+        }
+
+        div.flag{
+            background-color: #ce1126;
+            height: 600px;
+            width: 900px; 
+            position: relative;
+        }
+        
+        div.flag > p{
+            color: white;
+        }
+
+        div.flag div{
+            position: absolute;
+            background-color: #002868;
+            height: 300px;
+            width: 100%;
+            top: 150px;
+        }
+
+        div.flag div div{
+            /* position: absolute; */
+            background-color: white;
+            height: 200px;
+            width: 200px;
+            left: 350px;
+            top: 50px;
+            border-radius: 50%;
+        }
+
+        div.flag div div>p{
+            position: absolute;
+            bottom: 10px;
+            
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="flag">
+        <p>The Flag</p>
+        <div class="mid">
+            <div class="inner">
+                <p>of Laos</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<!-- so the div element was actually inheriting everything from the parent div, even the position status, the only thing that changed was the parent reference. -->
+<!-- In this case it was the inner div inheriting everything from the mid, but for it the refernce of parent was the mid itself than flag. -->
+<!-- it is always a better idea to first adjust the relative structures and then come to structuring div -->
+<!-- changes applied to div, percolate down to all the divs, mind you not paragraph tags ONLY BECAUSE WE USED div.flag div instead of div.flag>div -->
+<!-- So it looked for all the descendant divs -->
+<!-- the main thing is always look for the margins and padding and inherited properties if ever alignment doesn't make sense -->
+<!-- Also, now I've realised that if mdn docs say a property is not inherited and still in your case it does, it is only because you've properly done something with the selectors as I did -->
+<!-- There is a difference between div.flag div and div.flag > div -->
+<!-- The first one applies to all the div inside div.flag even the ones inside mid, but latter only focuses on mid. -->
