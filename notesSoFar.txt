@@ -42,3 +42,13 @@ inline-block: This puts element in the line like inline but also allows for heig
 with block if the width becomes very large it gets in right scroll
 in inline block, larger width makes the block go at the next line.
 
+FLOAT:
+When we want the text around our image we sent the img attribute float to left or right as convenient.
+Also, when we want a text to stay free from this effect we set the paragraph element to clear: left right or both
+
+
+RESPONSIVENESS
+Media Queries:
+@media (max-width: 600px) and (min-width: 900px){apply css here}
+@media Print (orientation:Landscape){}  #This is for specifying instructions when we want to print the webpage
+for other media queries refer the mdn doc
