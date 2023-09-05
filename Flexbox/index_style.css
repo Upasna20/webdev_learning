@@ -1,0 +1,41 @@
+.container {
+    background-color: beige;
+    border: 1px solid brown;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 5px;
+    border: 3px solid black;
+}
+
+#box1 {
+    background-color: aqua;
+    order: 4;
+}
+
+#box2 {
+    background-color: orangered; 
+    order: 1;
+}
+
+#box3 {
+    background-color: orchid;
+    order: 0;
+}
+
+#box4 {
+    background-color: olivedrab;
+    order: -1;
+}
+

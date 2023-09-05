@@ -52,3 +52,7 @@ Media Queries:
 @media (max-width: 600px) and (min-width: 900px){apply css here}
 @media Print (orientation:Landscape){}  #This is for specifying instructions when we want to print the webpage
 for other media queries refer the mdn doc
+
+FLEX BOX:
+1. By default, we have div that is block, likewise for paragraph tag, span is inline and likewise img tag. But as soon as you put them in a flexible container, all the elements come in 1 line, where the individual width is decided by their content. The FLEX Box by default is Block but you can also have it inline-block.
+2.
