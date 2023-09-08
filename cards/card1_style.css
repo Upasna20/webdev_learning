@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card {
+    height: 500px;
+    width: 300px;
+    background-color: beige;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 5px brown ;
+  
+}
+/* using flex the pragraph itself wrapped. */
+
+.image {
+    background-color: burlywood;
+    border-radius: 10%;
+    
+}
+
+img{
+    margin-left: 35px;
+    margin-top: 4px;
+    border-radius: 1%;
+}
+
+p {
+ font-weight: bolder;
+ text-align: center;
+}
+
+footer {
+    font-weight: 400;
+    text-align: center;
+}
