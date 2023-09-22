@@ -54,5 +54,64 @@ Media Queries:
 for other media queries refer the mdn doc
 
 FLEX BOX:
-1. By default, we have div that is block, likewise for paragraph tag, span is inline and likewise img tag. But as soon as you put them in a flexible container, all the elements come in 1 line, where the individual width is decided by their content. The FLEX Box by default is Block but you can also have it inline-block.
-2.
+1. By default, we have div that is block, likewise for paragraph tag, span is inline and likewise img tag. But as soon as you put them in a flexible container, all the elements come in 1 line, where the individual width is decided by their content. The FLEX Box by default is Block but you can also have it inline-flex.
+2. In flex box, essentially you have a container div that you set as a flexible box aka flex box by changing its display to flex.
+3. All the items inside the container flex will become a flex item.
+4. now we have two axis here, mainline and crossline, main line is along the items and cross line is orthogonal to the container alignment.
+Flex-flow: direction wrap
+5.The justify-content puts the container in the mid of the main line, for row it's horizontal whereas in the case of columns it is vertical.
+6. Then we also have spacebetween, space around and space even options.
+7. Align-items is used to put in the mid of cross axis, for row vertical and horizontal for columns.
+Both justify-content and align-items have options like start and end and stretch(optional).
+8. Align-content lets us handle the space when wrap is on, so when items are wrapped to the next line so the spaces between the lines can be managed.
+
+Flex box properties for the flex items(not the container):
+1. Order property to set the sequence, by default it is 0, negative numbers come before 0 and positive numbers as on a number line.
+2. Flex shrink: Used with wrap, by default all the boxes shrink in the same pace, but with a non zero shrink number, it shrinks with a higher pace, depending on the number given.
+3. Flex Grow: If all the items have a flex grow 1 then all the box cover the entire container space, if earlier anyone space was left.
+if this value for any item is increased then it catches the space with a higher pace than its counterparts.
+4. flex-basis: it sets the default, initial dimensions of any item.
+SHORTHAND Notation: flex: grow shrink basis
+5. align-self: it basically overrides align-items
+
+
+Forms:
+1. <form> tag encloses a form.
+2. Label tag to display something, use its for = " " to link with any <input> tag's id if you want to click on the element and be directed to the corresponding input.
+3. The input radio button works when the names of all the radio button's same.
+4. Fieldset is also and enclosing container kinda tag, whose heading is set using the legend tag.
+5. when in anchor you use the href="tel: <the number>"the number as strings</a> this can be emulated in input too.
+6. use the placeholder attribute to prefill texts for help. you also have max and min length attributes
+7. If you use the input type as number then you get a counter in the input box whose max and min can be set.
+
+
+We have tags like header, nav , main, footer, in main we have:  aside, article, in article we have section tag, these tags are used to provide semantics to the structure of the data.
+The heading tags h1 to h6 do not render so much the size as much as they do the semantics in terms of importance of the text.
+
+MediaInHtml:
+1. images using <img> tag, for good practice use the loading=lazy option
+2. <audio> tag for embedding audio. You can use the controls attribute to let the control get displayed.
+3. <video> again using controls is pivotal here. 
+<video controls>
+    <source src = "xyz" type="video/mp4"> incase of audio it is type="audio/mp3".
+    </video>
+
+4.iframe tag is used to embed other webpages or youtube videos. For embedding youtube videos you need to make changes in the link.
+5. remove watch to write embed in the youtube video.i.e watch?v= remove it and write embed/
+for autoplay write in the end: ?autoplay=1 if you also want mute then ?autoplay=1&mute=1
+
+
+Custom Variables:
+inside style tag
+1. For Global access: 
+
+:root {
+    --var1: brown
+}
+2. For local access inside of the particular style class or id.
+
+3. Access: use var(name of the variable) to access these variables.
+
+
+Box-shadow and text-shadow
+
